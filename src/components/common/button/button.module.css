@@ -1,0 +1,46 @@
+.buttonContainer {
+    position: relative;
+    max-width: 645px;
+}
+.button {
+    display: flex;
+    position: relative;
+    padding: 20px 0 20px 45px;
+    text-decoration: none;
+    max-width: 645px;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255,168,0,1) 0%, rgba(255,0,0,1) 100%);
+    transition: all 0.6s ease 0s;
+    box-shadow: 0 0 15px #FF5000;
+    z-index: 2;
+}
+.button:hover {
+    transform: translate(0, 15px);
+    box-shadow: 0 0 0 #FF5000;
+}
+.buttonShadow {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background: #000;
+    z-index: 1;
+}
+.buttonShadow.dark {
+    background: #626262;
+}
+@media (max-width: 1400px) {
+    .button {
+        padding-left: 20px;
+        font-size: 28px;
+    }
+}

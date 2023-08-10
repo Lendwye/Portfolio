@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('assets/fonts/icomoon.ttf?wxcurg') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ico"], [class*=" ico"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icocv:before {
+	content: "\e90c";
+  }
+  .icophone:before {
+	content: "\e90d";
+  }
+  .icotelegram:before {
+	content: "\e90a";
+  }
+  .icoworld:before {
+	content: "\e909";
+  }
+  .icofast:before {
+	content: "\e907";
+  }
+  .icoarrowDown:before {
+	content: "\e908";
+	color: #fff;
+  }
+  .icogithub:before {
+	content: "\e900";
+  }
+  .icoknowledge:before {
+	content: "\e901";
+  }
+  .icoorder_development:before {
+	content: "\e90b";
+  }
+  .icotheme:before {
+	content: "\e902";
+  }
+  .icohome:before {
+	content: "\e903";
+  }
+  .icomail:before {
+	content: "\e904";
+  }
+  .icoportfolio:before {
+	content: "\e905";
+  }
+  .icoquality:before {
+	content: "\e906";
+  }
+  

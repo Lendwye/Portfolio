@@ -1,0 +1,35 @@
+.asideOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.asideOptionsTheme {
+    background: unset;
+    padding: 0 !important;
+    color: #fff;
+    font-size: 60px;
+    border: unset;
+}
+.asideOptionsTheme.dark {
+    color: #000;
+}
+.asideOptionsLang {
+    display: none;
+}
+.asideOptionsLang.dark {
+    color: #000;
+}
+@media (max-width: 992px) {
+    .asideOptions {
+        flex-direction: row;
+    }
+    .asideOptionsLang {
+        display: block;
+        background: unset;
+        padding: 0 !important;
+        color: #fff;
+        font-size: 60px;
+        border: unset;
+    }
+}

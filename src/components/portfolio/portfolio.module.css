@@ -1,0 +1,178 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 40px;
+    overflow: hidden;
+}
+.portfolio.dark {
+    background-color: #000;
+}
+.title {
+    margin: 50px 0;
+    font-weight: 800;
+    font-size: 96px;
+}
+.title.dark {
+    color: #fff;
+}
+.content {
+    display: grid;
+    grid-template-areas: "slider description"
+                         "characteristics characteristics";
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 540px 250px;
+    max-width: 100%;
+    height: 100%;
+}
+.slider {
+    position: relative;
+    grid-area: slider;
+}
+.description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 40px;
+    max-height: 395px;
+}
+.descriptionContent {
+    position: relative;
+    height: 100%;
+}
+.characteristics {
+    grid-area: characteristics;
+    display: flex;
+    justify-content: space-between;
+    max-width: 2170px;
+}
+.characteristicsOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.characteristicsValues {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.characteristicsItem {
+    font-weight: 500;
+    font-size: 24px;
+}
+.characteristicsItem.dark {
+    color: #fff;
+}
+.projectTitle {
+    margin: 0;
+    margin-top: -15px;
+    font-weight: 600;
+    font-size: 64px;
+}
+.projectTitle.dark {
+    color: #fff;
+}
+.projectDescription {
+    max-width: 1500px;
+    max-height: 200px;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: auto;
+    overflow: auto;
+}
+.projectDescription.dark {
+    color: #fff;
+}
+.projectButton {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.br {
+    display: none;
+}
+@media (max-width: 1400px) {
+    .content {
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: "slider"
+                             "description"
+                             "characteristic";
+        grid-template-rows: unset;
+    }
+    .slider {
+        margin-bottom: 50px;
+        min-width: 540px;
+        height: 540px;
+    }
+    .description {
+        padding: 0;
+        align-items: center;
+    }
+    .characteristics {
+        grid-area: unset;
+    }
+    .portfolio {
+        overflow: unset;
+    }
+    .projectDescription {
+        max-width: 645px;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    .projectTitle {
+        text-align: center;
+    }
+    .characteristics {
+        width: 645px;
+    }
+    .description {
+        margin-top: 25px;
+        overflow: hidden;
+    }
+    .br {
+        display: unset;
+    }
+}
+@media (max-width: 992px) {
+    .title {
+        margin-top: 130px;
+    }
+}
+@media (max-width: 768px) {
+    .characteristicsOptions {
+        display: none;
+    }
+    .characteristicsItem {
+        text-align: left;
+        font-size: 30px;
+    }
+    .characteristics {
+        margin-right: auto;
+        width: auto;
+    }
+    .title {
+        font-size: 60px;
+    }
+}
+@media (max-width: 576px) {
+    .characteristicsItem {
+        text-align: center;
+    }
+    .characteristics {
+        margin-right: 0;
+    }
+    .projectDescription {
+        max-height: 280px;
+    }
+    .title {
+        text-align: center;
+    }
+}

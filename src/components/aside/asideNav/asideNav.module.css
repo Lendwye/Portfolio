@@ -1,0 +1,45 @@
+.asideNavImg {
+    font-size: 60px;
+    color: white;
+}
+.asideNavImg.currentLink {
+	max-width: 60px !important;
+	max-height: 60px !important;
+    color: #FF9900 !important;
+}
+.asideNavImg.dark {
+	color: #000;
+}
+.asideNavLink {
+    text-decoration: none;
+}
+.asideNavList {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.asideNavImg.dark {
+    color: #000;
+}
+.linkstext {
+    display: none;
+}
+@media (max-width: 992px) {
+    .asideNavList {
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .asideNavLink {
+        display: flex;
+        align-items: center;
+    }
+    .linkstext {
+        margin-left: 10px;
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+}

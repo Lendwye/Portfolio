@@ -1,0 +1,13 @@
+.asideSocialsCV {
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+}
+.asideSocialsCV.dark {
+    color: #000;
+}
+@media (max-width:992px) {
+    .asideSocialsCV {
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,76 @@
+.home {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr minmax(580px, 30%);
+    min-height: 100%;
+    overflow: hidden;
+}
+.home.dark {
+    background-color: #000;
+}
+.content {
+    padding: 0 40px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 128px;
+}
+.title.dark {
+    color: #fff !important;
+}
+.description {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #585858;
+}
+.img {
+    height: 100%;
+    background-image: url("../../assets/img/lendwyeImgHuge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 1400px) {
+    .title {
+        font-size: 80px;
+    }
+    .description {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .home {
+        display: flex;
+        background: linear-gradient( rgb(255, 204, 0), rgb(255, 0, 0));
+    }
+    .home.dark {
+        background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(12, 12, 12, 0.9)), url("../../assets/img/lendwyeImgHuge.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .title {
+        color: #000;
+    }
+    .title.dark {
+        color: #fff;
+    }
+    .description {
+        color: #000;
+    }
+    .description.dark {
+        color: #fff;
+    }
+    .img {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+
+}

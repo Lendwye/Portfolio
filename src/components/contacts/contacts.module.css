@@ -1,0 +1,36 @@
+.contacts {
+    height: 100%;
+    padding: 0 40px;
+}
+.contacts.dark {
+    background: #000;
+}
+.title {
+    margin: 0;
+    padding-top: 50px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 96px;
+    text-align: left;
+}
+.title.dark {
+    color: #fff;
+}
+.contactsList {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    list-style: none;
+}
+
+@media (max-width: 1200px) {
+    .contactsList {
+        align-items: center;
+    }
+}
+@media (max-width: 992px) {
+    .title {
+        padding-top: 130px;
+    }
+}
